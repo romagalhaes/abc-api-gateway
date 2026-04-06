@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "abc-api-gateway"
+  description: "APIGateway"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-location: "url:https://github.com/romagalhaes/abc-api-gateway"
+    idp.mycompany.com/infrastructure-repository: "https://github.com/romagalhaes/abc-api-gateway-infra"
+    idp.mycompany.com/infrastructure-entity-ref: "component:default/abc-api-gateway-infra"
+spec:
+  type: service
+  owner: "group:default/guests"
+  lifecycle: experimental
